@@ -1,0 +1,364 @@
+/*
+		_main.scss	
+*/
+
+/*
+											--- Variables ---
+*/
+
+$color_1: #F0A03D;// ORANGE
+$color_2: #79B833;// GREEN
+$color_3: #5FC6F1;// BLUE
+$color_4: #E4097F;//
+
+$font-family-1: "Open Sans";
+$font-family-2: "Open Sans";
+//$font-family-3: "EseninscriptTwo";
+$color_scroll: $color_2;
+$color_footer: #0071BC;
+
+$color_gray_1: #848484;
+$color_gray_2: #FAFAFA;
+$color_gray_3: #212121;
+
+@function em($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}em;
+}
+@mixin modal-center($width, $height) {
+	width: $width;
+   height: $height;
+   margin-left: -+($width/2);
+   margin-top: -+($height/2);
+  left: 50%;
+	top: 50%;
+}
+
+@mixin img-circle($width, $height, $mwidth: 120%) {
+	.img-circle{
+		position: relative;
+		overflow: hidden;
+		img{
+			max-width: $mwidth;
+		}
+		width: $width;
+		height: $height;
+	}
+}
+
+@mixin inline-ble($width, $mwidth ) {
+	figure{	
+		width: $width;
+		margin-right: $mwidth;
+	}
+}
+@mixin table-celling($height) {
+
+	display: table-cell;
+	height: $height;
+	//padding-left: $padding;
+	//padding-right: $padding;
+	vertical-align: middle;
+
+}
+@mixin table-cellingAdap() {
+
+	@media only screen and ( max-width:991px ){
+		display: block;
+		height: auto;
+		width: 100%;
+	}
+
+}
+
+
+
+//////////////////////
+/*
+									 --- HTML ---
+*/
+
+[class*="col"]{
+	padding-left: 0;
+	padding-right: 0;
+}
+
+
+//Scrolling
+
+::-webkit-scrollbar{
+	width:5px;
+	position: absolute;
+}
+ ::-webkit-scrollbar-thumb{
+ 	border-radius: 5px;
+ 	z-index: 500;
+	background-color: lighten($color_scroll, 0%);
+}
+::-webkit-scrollbar-thumb:hover{
+	background-color: darken($color_scroll, 5%);
+} 
+::-webkit-scrollbar-thumb:active{
+	background-color: darken($color_scroll, 10%);
+}
+::-webkit-scrollbar-track-piece{
+	background-color: white;
+}
+// OPERA
+::-o-scrollbar{
+	width:5px;
+	position: absolute;
+}
+::-o-scrollbar-thumb{
+	z-index: 500;
+	border-radius: 5px;
+	background-color: lighten($color_scroll, 5%);
+}
+::-o-scrollbar-thumb:hover{
+	background-color: darken($color_scroll, 5%);
+} 
+::-o-scrollbar-thumb:active{
+	background-color: darken($color_scroll, 10%);
+}
+::-o-scrollbar-track-piece{
+	background-color: rgba(white, 0.5);
+}
+::selection {
+    background: $color_1;
+    color: #fff;
+    text-shadow: none;
+ }
+html{
+	-ms-scrollbar-track-color: rgba(0, 0, 0, 0);
+	-ms-scrollbar-face-color: $color_scroll;
+	-ms-scrollbar-shadow-color: $color_scroll;
+	-ms-scrollbar-base-color: lighten($color_scroll, 5%);
+
+	-ms-scroll-translation: vertical-to-horizontal;
+	-ms-scroll-snap-type: mandatory;
+	-ms-scrollbar-3dlight-color: $color_scroll;
+	-ms-scrollbar-darkshadow-color: darken($color_scroll, 5%);
+	-ms-scrollbar-highlight-color: transparent;
+}
+
+body{
+	//overflow-y: hidden;
+	-ms-text-size-adjust: none;
+	-webkit-text-size-adjust: none;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	text-size-adjust: none;
+	font: 14px $font-family-1;
+	//color: white;
+	//height: auto !important;
+	//background-color: black;
+}
+
+
+p, li, ul, menu{
+	font-weight: 400;
+	margin: 0;
+	padding: 0;
+	vertical-align: middle;
+}
+menuitem{
+	display: inline-block;
+}
+a{
+	transition: color 0.2s ease-in-out;
+	color: inherit;
+}
+a:hover, a:active, a:focus{
+	text-decoration: none;
+}
+button:hover, button:active, button:focus{
+	outline: 0;
+}
+button{
+	outline: 0;
+}
+p{
+	margin: auto;
+	line-height: 110%;
+}
+img{
+	max-width: 100%;
+	outline: 0;
+}
+h1,h2,h3,h4,h5{
+	font-family: $font-family-2;
+	color: inherit;
+	line-height: 160%;
+}
+h4{
+	font-size: em(14, 16);
+}
+h3{
+	font-size: em(18, 16);
+}
+h2{
+	font-size: em(24, 16);
+}
+h1{
+	font-size: em(36, 16);
+
+}
+article{
+	ol{
+		margin-top: 15px;
+	}
+}
+ul{
+	position: relative;
+	list-style: none;
+	&:hover{
+		cursor: default;
+	}
+}
+input:focus, button:focus{
+	outline: transparent;
+}
+b{
+	font-weight: 600;
+}
+strong{
+	font-weight: 700;
+}
+button:hover, button:focus{
+	cursor: pointer;
+}
+
+
+
+.bg-cover{
+	position: relative;
+	opacity: 1;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.color-white{
+	color: white;
+}
+.color-black{
+	color: black;
+}
+
+.color-gray{
+	color: $color_gray_1;
+}
+
+.color-1{
+	color: $color_1;
+}
+.color-2{
+	color: $color_2;
+}
+.color-3{
+	color: $color_3;
+}
+.color-4{
+	color: $color_4;
+}
+
+
+.font-family-1{
+	font-family: $font-family-1;
+}
+.font-family-2{
+	font-family: $font-family-2;
+}
+
+.bg-color-white{
+	background-color: white;
+}
+.bg-color-black{
+	background-color: #333;
+}
+
+.bg-color-1{
+	background-color: $color_1;
+}
+.bg-color-2{
+	background-color: $color_2;
+}
+.bg-color-3{
+	background-color: $color_3;
+}
+.bg-color-4{
+	background-color: $color_4;
+}
+
+
+
+
+.claf{
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.btn{
+	&:focus, &:active{
+		outline: none;
+	}
+}
+.btn-res{
+	background: transparent;
+	border: 0;
+	padding: 0;
+}
+
+
+
+
+
+
+
+
+
+
+.content{
+	background-color: #333;
+	width: 100vw;
+	padding:50px;
+	height: 100vh;
+	canvas{
+		display: block;
+    margin: auto;
+	}
+}
+
+
+
+
+
+
+/*
+										 --- FOOTER ---
+*/
+
+
+#footer{}
+
+/*
+										 --- OTHER ---
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import "_media.scss"; //------ 	END 	------------------------

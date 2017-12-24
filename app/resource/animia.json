@@ -1,0 +1,134 @@
+{"frames": {
+
+
+
+"rollSequence00.png":
+{
+    "frame": {"x":0,"y":0,"w":32,"h":32},
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": {"x":0,"y":0,"w":0,"h":0},
+    "sourceSize": {"w":0,"h":0}
+},
+"rollSequence01.png":
+{
+    "frame": {"x":32,"y":0,"w":32,"h":32},
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": {"x":0,"y":0,"w":0,"h":0},
+    "sourceSize": {"w":0,"h":0}
+},
+"rollSequence02.png":
+{
+    "frame": {"x":64,"y":0,"w":32,"h":32},
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": {"x":0,"y":0,"w":0,"h":0},
+    "sourceSize": {"w":0,"h":0}
+},
+
+
+
+
+"rollSequence03.png":
+{
+    "frame": {"x":0,"y":32,"w":32,"h":32},
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": {"x":0,"y":0,"w":0,"h":0},
+    "sourceSize": {"w":0,"h":0}
+},
+
+"rollSequence04.png":
+{
+    "frame": {"x":32,"y":32,"w":32,"h":32},
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": {"x":0,"y":0,"w":0,"h":0},
+    "sourceSize": {"w":0,"h":0}
+},
+"rollSequence05.png":
+{
+    "frame": {"x":64,"y":32,"w":32,"h":32},
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": {"x":0,"y":0,"w":0,"h":0},
+    "sourceSize": {"w":0,"h":0}
+},
+
+
+
+
+
+"rollSequence06.png":
+{
+    "frame": {"x":0,"y":64,"w":32,"h":32},
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": {"x":0,"y":0,"w":0,"h":0},
+    "sourceSize": {"w":0,"h":0}
+},
+
+"rollSequence07.png":
+{
+    "frame": {"x":32,"y":64,"w":32,"h":32},
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": {"x":0,"y":0,"w":0,"h":0},
+    "sourceSize": {"w":0,"h":0}
+},
+"rollSequence08.png":
+{
+    "frame": {"x":64,"y":64,"w":32,"h":32},
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": {"x":0,"y":0,"w":0,"h":0},
+    "sourceSize": {"w":0,"h":0}
+},
+
+
+
+
+
+
+"rollSequence09.png":
+{
+    "frame": {"x":0,"y":96,"w":32,"h":32},
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": {"x":0,"y":0,"w":0,"h":0},
+    "sourceSize": {"w":0,"h":0}
+},
+
+"rollSequence10.png":
+{
+    "frame": {"x":32,"y":96,"w":32,"h":32},
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": {"x":0,"y":0,"w":0,"h":0},
+    "sourceSize": {"w":0,"h":0}
+},
+"rollSequence11.png":
+{
+    "frame": {"x":64,"y":96,"w":32,"h":32},
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": {"x":0,"y":0,"w":0,"h":0},
+    "sourceSize": {"w":0,"h":0}
+}
+
+
+
+
+
+},
+"meta": {
+    "app": "http://www.texturepacker.com",
+    "version": "1.0",
+    "image": "magi-face.png",
+    "format": "RGBA8888",
+    "size": {"w":384,"h":256},
+    "scale": "1",
+    "smartupdate": "$TexturePacker:SmartUpdate:2f213a6b451f9f5719773418dfe90ae8$"
+}
+}
